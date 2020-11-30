@@ -15,4 +15,14 @@ describe('Bhaskara', () => {
             bhaskara.calculateDelta(7, 3, 4).should.equal(-103);
         }) 
     })
+
+    context('roots', () => {
+        it('calculateRoot1', () => {
+            bhaskara.calculateRoot1(2, -10, 36).should.equal(4);
+        })
+
+        it('calculateRoot2', () => {
+            bhaskara.calculateRoot2(2, -10, 36).should.equal(1);
+        })
+    })    
 })
